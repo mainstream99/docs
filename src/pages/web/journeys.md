@@ -25,7 +25,7 @@ On a daily basis, Google Search drives **more app installs** than all of Faceboo
 
 ### Add the Branch Web SDK to your site
 
-Add the following code somewhere inside the `<head></head>` tags on your website. More information about this SDK can be found in the [Github README](https://github.com/BranchMetrics/web-branch-deep-linking).
+Add the following code somewhere inside the `<head></head>` tags on your website. We recommend loading the SDK as early as possible for optimal Journeys performance. More information about this SDK can be found in the [Github README](https://github.com/BranchMetrics/web-branch-deep-linking).
 
 ```html
 <script type="text/javascript">
@@ -34,6 +34,9 @@ Add the following code somewhere inside the `<head></head>` tags on your website
 ```
 
 {! partials/replace-branch-key.md !}
+
+!!! note “GDPR considerations”
+    In order to help our customers comply with [GDPR](https://branch.io/gdpr/), we’ve updated our Web SDK with a [Do Not Track mode](https://docs.branch.io/pages/web/integrate/#enable-do-not-track-mode). This way, if a user indicates that they want to remain private on your website, you can continue to make use of the Branch Web SDK (e.g. for creating Branch links) while not tracking that user. Click [here](https://docs.branch.io/pages/web/journeys/#journeys-and-gdpr) for information on how this mode impacts Journeys.
 
 
 ### Deep linking from the banner or interstitial
@@ -79,9 +82,7 @@ If a user is referred to a page running Journeys via a Branch link, then referri
 
 ### Select audience
 
-You can customize the audience that will see your Journey by choosing the target platform, device, and region.
-
-For example, if you have users in many countries, you can create a separate Journey for each localization and use audience targeting rules to make sure users see the appropriate one.
+You can customize the audience that will see your Journey by choosing target platforms and device types, and by adding additional targeting rules.
 
 ![image](/img/pages/journeys/audience-rules.png)
 
@@ -89,7 +90,6 @@ For example, if you have users in many countries, you can create a separate Jour
 | --- | --- |
 | Platform | Branch currently offers Journeys on one platform: **Mobile web**. This will display for mobile users on your website. _More options coming soon._
 | Devices | Which devices would you like to target? For example, if you only have an iOS app, then you might want to show a Journey only to users viewing your mobile website on iOS.
-| Regions | Select one or more countries in which to display your Journey. Defaults to **Show to All Regions**
 | Additional Filters | Read about advanced filtering criteria [here](/pages/web/journeys/#advanced-audience-rules).
 
 ### Select and style the banner or interstitial
@@ -257,6 +257,10 @@ If you have [custom event tracking](/pages/apps/ios/#track-events) set up, you c
 <!-- #### Referred from site
 
 You can target a user based on the last touch point before they entered your website. For example, if you want to target users that found you through Google Search, you can select “Referred from site” and fill in `google.com`. Currently, we only support domain names in the Referred from site field. -->
+
+#### Is located
+
+Use this filter to target (or exclude) users viewing your website in different regions. Target by country, state/province, or city.
 
 #### Is viewing a page url
 
@@ -996,3 +1000,16 @@ Next, go through and choose the following countries: `United States`, `Canada`, 
 ![image](/img/pages/journeys/examples/ios_english_1.png)
 
 Save and continue!
+
+## Journeys and GDPR
+In order to help our customers comply with [GDPR](https://branch.io/gdpr/), we’ve updated our Web SDK with a [Do Not Track mode](https://docs.branch.io/pages/web/integrate/#enable-do-not-track-mode). This way, if a user indicates that they want to remain private on your website, you can continue to make use of the Branch Web SDK (e.g. for creating Branch links) while not tracking that user. 
+
+If you enable that mode, you can still display some Journeys to your users. Whether or not a Journey will display for users in Do Not Track mode depends on the targeting criteria you’ve defined for that Journey. If the Journey uses any of the following audience filters, it will *not* display for users in Do Not Track mode. Otherwise, the Journey will display.
+* Has completed event
+* Has visited web
+* Has visited the app
+* Has clicked on email
+* Has clicked on ad
+* Has the app installed
+
+If a Journey does display for a user in Do Not Track mode, any analytics related to the Journey’s display or the user’s interactions with that Journey *will not be published in the Branch dashboard.*

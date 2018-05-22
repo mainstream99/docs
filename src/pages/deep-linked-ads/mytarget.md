@@ -1,7 +1,6 @@
 ## Overview
 
 This guide will walk you through how to integrate [MyTarget](https://target.my.com/) with Branch. 
-It is best to familiarize yourself with Branch Universal Ads product first by following [this documentation](pages/deep-linked-ads/branch-universal-ads.md) first.
 
 Universal Ads provides everything you need for complete tracking, including rich data for the MyTarget Engine to opimtize against.
 
@@ -56,7 +55,7 @@ MyTarget requires separate links for every platform - to create a tracking follo
 #### iOS 
 Key | Value 
 --- | --- 
-$redirect_store_id | Android App ID (example io.branch.branchster)
+$redirect_store_id | iTunes ID (example id917737838)
 $http_redirect_only | true 
 
 ![image](/img/pages/deep-linked-ads/mytarget/ios-link-data.png)
@@ -64,7 +63,7 @@ $http_redirect_only | true
 #### Android
 Key | Value 
 --- | --- 
-$redirect_store_id | iTunes ID (example id917737838)
+$redirect_store_id | Android App ID (example io.branch.branchster)
 $http_redirect_only | true 
 
 ![image](/img/pages/deep-linked-ads/mytarget/android-link-data.png)
