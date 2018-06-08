@@ -19,7 +19,7 @@ Logo | Partner
 <a href="http://affise.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/affise-1528497847994.png)</a>| **Affise**
 <a href="http://appsamurai.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/as-logotype-color-1524959500790.png)</a>| **App Samurai**
 <a href="http://appier.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/appier-1528497934384.png)</a>| **Appier**
-<a href="http://apple.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/logo_searchAds-1506359721056.png)</a>| **Apple**
+<a href="http://apple.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/search_ads-1528501330030.png)</a>| **Apple**
 <a href="http://applift.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/applift-1528498391745.png)</a>| **Applift**
 <a href="http://applovin.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/AppLovin-1525376288411.png)</a>| **Applovin**
 <a href="http://appnext.com">![image](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/appnext-1528498601302.png)</a>| **Appnext**
