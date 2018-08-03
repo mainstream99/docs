@@ -139,7 +139,7 @@
 
 - ### Read deep link
 
-    - Retrieve Branch data from a deep link
+    - Retrieve Branch data from a deep link that began a web session.
 
     - Best practice to receive data from the `listener` (to prevent a race condition)
 
